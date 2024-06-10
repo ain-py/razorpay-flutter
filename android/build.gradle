@@ -34,6 +34,6 @@ android {
     }
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar'])
-        api 'com.razorpay:checkout:1.6.+'
+        api ('com.razorpay:checkout:1.6.+'){ exclude group:'com.google.android.gms', module:'play-services-auth' exclude group:'com.google.android.gms', module:'play-services-auth-api-phone'  }
     }
 }
